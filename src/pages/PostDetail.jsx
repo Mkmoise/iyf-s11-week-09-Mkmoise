@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import LoadingSpinner from "../components/shared/LoadingSpinner";
 import ErrorMessage from "../components/shared/ErrorMessage";
-import Card from "../components/shared/Card";
+import Card from "../components/Card";
 
 function PostDetail() {
   const { postId } = useParams();
