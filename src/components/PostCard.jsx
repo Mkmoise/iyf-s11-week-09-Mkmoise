@@ -1,11 +1,21 @@
-function PostCard({ title, excerpt, author, date }) {
+import { Link } from "react-router-dom";
+import Card from "../shared/Card";
+
+function PostCard({ post }) {
   return (
-    <article>
-      <h3>{title}</h3>
-      <p>{excerpt}</p>
-      <p>By {author}</p>
-      <span>{date}</span>
-    </article>
+    <Card>
+      <article className="post-card">
+        <p className="post-number">Post #{post.id}</p>
+
+        <h2>{post.title}</h2>
+
+        <p>{post.body.slice(0, 120)}...</p>
+
+        <Link className="read-more" to={`/posts/${post.id}`}>
+          Read More
+        </Link>
+      </article>
+    </Card>
   );
 }
 
