@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
 import Button from "../components/Button";
 import Input from "../components/shared/Input";
-import Card from "../components/shared/Card";
+import Card from "../components/Card";
 
 function CreatePost() {
   const navigate = useNavigate();
