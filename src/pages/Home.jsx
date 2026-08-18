@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-import PostList from "../components/Post/PostList";
+import PostList from "../components/PostList";
 import LoadingSpinner from "../components/shared/LoadingSpinner";
 import ErrorMessage from "../components/shared/ErrorMessage";
 
