@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import useLocalStorage from "../hooks/useLocalStorage";
-import PostList from "../components/Post/PostList";
+import PostList from "../components/PostList";
 import LoadingSpinner from "../components/shared/LoadingSpinner";
 import ErrorMessage from "../components/shared/ErrorMessage";
 
